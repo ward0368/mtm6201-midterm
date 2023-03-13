@@ -145,22 +145,23 @@ footer {
 	padding-right: 15%;
 }
 
+/* Styles and positions h3's */
 h3 {
 	font-size: larger;
 	font-family: 'Tilt Warp', cursive;
-	padding: 10px;
+	padding-bottom: 1.5%;
+	display: grid;
+	justify-content: center;
 }
 
-.ourproductsh {
+/* Positions home <main> content using grid */
+.home1 {
 	display: grid;
-	justify-content: right;
-	background-color: blue;
+	grid-auto-flow: column;
+}
+
+.ourproductsh, .aboutush {
+	padding: 1.2%;
 	
 }
 
-.aboutush {
-	display: grid;
-	justify-content: left;
-	background-color: red;
-
-}
