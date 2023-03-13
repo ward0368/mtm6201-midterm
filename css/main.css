@@ -98,7 +98,7 @@ a {
   }
 
 /* Styles and sizes image, as well as positions */
-  .cakepop {
+.cakepop {
 	display: flex;
 	margin: 10px auto;
 	width: 70%;
@@ -106,7 +106,14 @@ a {
   }
 
 /* styles background color of site to match wireframe */
-  html {
+html {
 	background-color: rgba(147,199,116,255);
+	min-height: 100%;
   }
 
+
+
+footer {
+	background-color: rgba(102,52,151,255);
+	padding: 20px;
+}
