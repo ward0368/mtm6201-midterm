@@ -48,23 +48,40 @@ table {
 }
 /* RESET.CSS ABOVE */
 
+ul li {
+	display: inline;
+	justify-content: right;
+	align-items: center;
+	align-content: center;
+}
+
+/* Styles navigation container */
 .navigation {
-    display: flex;
+	/* Custom purple color from hi-fi wireframe */
+	background-color: rgba(102,52,151,255);
+	list-style: none;
+	width: 100%;
+	text-align: center;
 }
 
-nav {
-    display: flex;
-}
 
+/* animates/resizes site logo */
 .sitelogo {
     width: 10%;
 }
 
+/* Styles and positions "skip to main content" skip link */
 .skip {
     display: flex;
     position: absolute;
-    margin: auto;
+	right: 40%;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
+	color: rgba(102,52,151,255);
+	background-color: rgba(147,199,116,255);
+	padding: 10px;
   }
+
+
 
