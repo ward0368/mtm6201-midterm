@@ -72,18 +72,23 @@ ul li {
 	width: 100%;
 }
 
+/* Removes underline from all links */
 a {
 	text-decoration: none;
+	font-family: 'Tilt Warp', cursive;
 }
 
+/* Styles sitting links and visited links */
 a:link, a:visited {
 	color: rgba(147,199,116,255);
 }
 
+/* Styles hovered links and active links */
 a:hover, a:active {
 	color: greenyellow;
 }
 
+/* Adds padding to right side of navigation */
 .contact {
 	padding-right: 5%;
 }
@@ -103,7 +108,6 @@ a:hover, a:active {
     justify-content: center;
     align-items: center;
 	color: rgba(102,52,151,255);
-	background-color: rgba(147,199,116,255);
 	padding: 10px;
   }
 
@@ -123,7 +127,12 @@ html {
 
 
 
+/* styles the footer to match wireframe */
 footer {
 	background-color: rgba(102,52,151,255);
 	padding: 20px;
+}
+
+.unsplash {
+	padding-right: 15%;
 }
