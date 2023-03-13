@@ -48,11 +48,20 @@ table {
 }
 /* RESET.CSS ABOVE */
 
+
+
+/* Styles and positions li's */
 ul li {
 	display: inline;
-	font-size: 40px;
+	font-size: 40px;	
 	padding: 10px;
 	margin: 0 auto;
+}
+
+/* Positions main navigation links */
+.hac {
+	text-align: right;
+	padding-bottom: 30px;
 }
 
 /* Styles navigation container */
@@ -63,14 +72,13 @@ ul li {
 	width: 100%;
 }
 
-.hac {
-	text-align: right;
-}
+
 
 
 /* animates/resizes site logo */
 .sitelogo {
     width: 10%;
+	display: flex;	
 }
 
 /* Styles and positions "skip to main content" skip link */
@@ -86,5 +94,16 @@ ul li {
 	padding: 10px;
   }
 
+/* Styles and sizes image, as well as positions */
+  .cakepop {
+	display: flex;
+	margin: 10px auto;
+	width: 70%;
+	border: solid rgba(102,52,151,255) 10px;
+  }
 
+/* styles background color of site to match wireframe */
+  html {
+	background-color: rgba(147,199,116,255);
+  }
 
