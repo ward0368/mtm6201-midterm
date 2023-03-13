@@ -48,7 +48,23 @@ table {
 }
 /* RESET.CSS ABOVE */
 
+.navigation {
+    display: flex;
+}
 
+nav {
+    display: flex;
+}
 
+.sitelogo {
+    width: 10%;
+}
 
+.skip {
+    display: flex;
+    position: absolute;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
 
