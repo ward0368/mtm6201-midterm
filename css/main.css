@@ -50,7 +50,13 @@ table {
 
 
 
-/* Styles and positions li's */
+
+
+
+/* DESKTOP CSS BELOW (as we only have desktop wireframe) */
+
+
+/* Styles and positions list items (navigation) */
 ul li {
 	display: inline;
 	font-size: 40px;	
@@ -62,6 +68,7 @@ ul li {
 .hac {
 	text-align: right;
 	padding-bottom: 30px;
+	padding-top: 30px;
 }
 
 /* Styles navigation container */
@@ -95,15 +102,16 @@ a:hover, a:active {
 
 /* animates/resizes site logo */
 .sitelogo {
-    width: 10%;
-	display: flex;	
+    width: 7%;
+	display: flex;
+	float: left;
 }
 
 /* Styles and positions "skip to main content" skip link */
 .skip {
     display: flex;
     position: absolute;
-	right: 40%;
+	right: 50%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -135,4 +143,24 @@ footer {
 
 .unsplash {
 	padding-right: 15%;
+}
+
+h3 {
+	font-size: larger;
+	font-family: 'Tilt Warp', cursive;
+	padding: 10px;
+}
+
+.ourproductsh {
+	display: grid;
+	justify-content: right;
+	background-color: blue;
+	
+}
+
+.aboutush {
+	display: grid;
+	justify-content: left;
+	background-color: red;
+
 }
