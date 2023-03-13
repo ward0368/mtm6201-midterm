@@ -80,6 +80,10 @@ a:link, a:visited {
 	color: rgba(147,199,116,255);
 }
 
+a:hover, a:active {
+	color: greenyellow;
+}
+
 .contact {
 	padding-right: 5%;
 }
