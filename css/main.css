@@ -50,9 +50,9 @@ table {
 
 ul li {
 	display: inline;
-	justify-content: right;
-	align-items: center;
-	align-content: center;
+	font-size: 40px;
+	padding: 10px;
+	margin: 0 auto;
 }
 
 /* Styles navigation container */
@@ -61,7 +61,10 @@ ul li {
 	background-color: rgba(102,52,151,255);
 	list-style: none;
 	width: 100%;
-	text-align: center;
+}
+
+.hac {
+	text-align: right;
 }
 
 
