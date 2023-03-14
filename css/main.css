@@ -138,11 +138,15 @@ html {
 /* styles the footer to match wireframe */
 footer {
 	background-color: rgba(102,52,151,255);
+	font-size: larger;
 	padding: 20px;
+	display: flex;
+	justify-content: center;
+	font-family: 'Tilt Warp', cursive;
 }
 /* Adds padding to unsplash link */
 .unsplash {
-	padding-right: 15%;
+	padding-right: 1%;
 }
 
 /* Styles and positions h3's */
@@ -151,13 +155,13 @@ h3 {
 	font-family: 'Tilt Warp', cursive;
 	padding-bottom: 1.5%;
 	display: grid;
-	justify-content: center;
+	justify-content: left;
 }
 
 /* Styles all paragraph text */
 p {
 	font-family: 'Lato', sans-serif;
-	font-size: large;
+	font-size: larger;
 }
 
 /* Positions home <main> content using grid */
