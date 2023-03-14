@@ -102,7 +102,7 @@ a:hover, a:active {
 
 /* animates/resizes site logo */
 .sitelogo {
-    width: 7%;
+    width: 5%;
 	display: flex;
 	float: left;
 }
@@ -111,7 +111,7 @@ a:hover, a:active {
 .skip {
     display: flex;
     position: absolute;
-	right: 50%;
+	right: 80%;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
@@ -140,7 +140,7 @@ footer {
 	background-color: rgba(102,52,151,255);
 	padding: 20px;
 }
-
+/* Adds padding to unsplash link */
 .unsplash {
 	padding-right: 15%;
 }
@@ -154,6 +154,7 @@ h3 {
 	justify-content: center;
 }
 
+/* Styles all paragraph text */
 p {
 	font-family: 'Lato', sans-serif;
 	font-size: large;
@@ -165,8 +166,8 @@ p {
 	grid-auto-flow: column;
 }
 
+/* Adds padding to body text */
 .ourproductsh, .aboutush {
 	padding: 1.2%;
-	
 }
 
