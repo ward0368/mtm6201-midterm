@@ -179,6 +179,7 @@ h4 {
 	padding: 3%;
 }
 
+/* adds padding to all paragraphs within an article */
 article p {
 	padding: 1%;
 }
@@ -203,6 +204,7 @@ p {
 	padding-left: 1%;
 	padding-bottom: 5%;
 }
+
 /* Adds padding to about us body text */
 .aboutush {
 	padding-top: 5%;
