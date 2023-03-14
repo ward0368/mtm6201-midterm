@@ -143,7 +143,8 @@ footer {
 	display: flex;
 	justify-content: center;
 	font-family: 'Tilt Warp', cursive;
-}
+} 
+
 /* Adds padding to unsplash link */
 .unsplash {
 	padding-right: 1%;
@@ -157,6 +158,19 @@ h3 {
 	display: grid;
 	justify-content: left;
 	padding-bottom: 2%;
+}
+
+/* Styles and positions h4's */
+h4 {
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+	font-family: 'Tilt Warp', cursive;
+	padding: 3%;
+}
+
+article p {
+	padding: 1%;
 }
 
 /* Styles all paragraph text */
