@@ -107,6 +107,18 @@ a:hover, a:active {
 	float: left;
 }
 
+/* Animates site logo when hovering (for fun) */
+.sitelogo:hover {
+	transform:rotateY(2turn);
+  	transition:transform 4s;
+}
+
+/* Animates site logo when active (for fun) */
+.sitelogo:active {
+	transform: rotateX(4turn) scale(0.2);
+ 	transition: transform 4s;
+}
+
 /* Styles and positions "skip to main content" skip link */
 .skip {
     display: flex;
@@ -132,8 +144,6 @@ html {
 	background-color: rgba(147,199,116,255);
 	min-height: 100%;
   }
-
-
 
 /* styles the footer to match wireframe */
 footer {
