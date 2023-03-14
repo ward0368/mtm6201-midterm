@@ -213,3 +213,11 @@ p {
 	padding-bottom: 5%;
 }
 
+/* Styles and positions chocolate cake image at bottom of "about us" page */
+.chocolatecake {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	margin: 30px auto;
+	border: solid rgba(102,52,151,255) 10px;
+}
