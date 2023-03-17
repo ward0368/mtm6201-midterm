@@ -280,7 +280,226 @@ form {
 	transition: background-color 0.3s ease-in-out;
   }
   
+  /* Animates hovering over the submit button by changing stylization when hovering */
   button[type="submit"]:hover {
 	background-color: rgba(80,52,151,255);
   }
-  
+
+
+/* MOBILE DESIGN BELOW */
+
+
+@media only screen and (max-width: 600px) {
+	/* Styles and positions list items (mobile navigation) */
+	ul li {
+		display: flex;
+		font-size: 40px;	
+		padding: 10px;
+		justify-items: center;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+	}
+	/* Positions main navigation links (mobile) */
+	.hac {
+		text-align: center;
+		padding-bottom: 30px;
+		padding-top: 30px;
+		justify-content: center;
+		display: flex;
+		border: solid 10px black;
+	}
+	
+
+	/* Adds padding to right side of navigation */
+	.contact {
+		padding-right: 5%;
+	}
+
+	/* animates/resizes site logo */
+	.sitelogo {
+		width: 5%;
+		display: flex;
+		float: left;
+	}
+
+	/* Animates site logo when hovering (for fun) */
+	.sitelogo:hover {
+		transform:rotateY(2turn);
+		transition:transform 4s;
+	}
+
+	/* Animates site logo when active (for fun) */
+	.sitelogo:active {
+		transform: rotateX(4turn) scale(0.2);
+		transition: transform 4s;
+	}
+
+	/* Styles and positions "skip to main content" skip link */
+	.skip {
+		display: flex;
+		position: absolute;
+		right: 80%;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
+		color: rgba(102,52,151,255);
+		padding: 10px;
+	}
+
+	/* Styles and sizes image, as well as positions */
+	.cakepop {
+		display: flex;
+		margin: 10px auto;
+		width: 80%;
+		border: solid rgba(102,52,151,255) 10px;
+	}
+
+	/* styles background color of site to match wireframe */
+	html {
+		background-color: rgba(147,199,116,255);
+		min-height: 100%;
+	}
+
+	/* styles the footer to match wireframe */
+	footer {
+		background-color: rgba(102,52,151,255);
+		font-size: larger;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		font-family: 'Tilt Warp', cursive;
+	} 
+
+	/* Adds padding to unsplash link */
+	.unsplash {
+		padding-right: 1%;
+	}
+
+	/* Styles and positions h3's */
+	h3 {
+		font-size: 40px;
+		font-family: 'Tilt Warp', cursive;
+		padding-bottom: 1.5%;
+		display: grid;
+		justify-content: left;
+		padding-bottom: 2%;
+		color: rgba(102,52,151,255);
+	}
+
+	/* Styles and positions h4's */
+	h4 {
+		display: flex;
+		justify-content: center;
+		font-size: 40px;
+		font-family: 'Tilt Warp', cursive;
+		padding: 3%;
+		color: rgba(102,52,151,255);
+	}
+
+	/* adds padding to all paragraphs within an article */
+	article p {
+		padding: 1%;
+	}
+
+	/* Styles all paragraph text */
+	p {
+		font-family: 'Lato', sans-serif;
+		font-size: 25px;
+		color: rgba(102,52,151,255);
+	}
+
+	h1 {
+		display: flex;
+		justify-content: center;
+		font-family: 'Tilt Warp', cursive;
+		padding-bottom: 20px;
+		padding-top: 10px;
+		font-size: 40px;
+		color: rgba(102,52,151,255);
+	}
+
+	/* Positions home <main> content using grid */
+	.home1 {
+		display: grid;
+		grid-auto-flow: column;
+		margin: 0 auto;
+	}
+
+	/* Adds padding to our products body text */
+	.ourproductsh {
+		padding-right: 20%;
+		padding-top: 5%;
+		padding-left: 1%;
+		padding-bottom: 5%;
+	}
+
+	/* Adds padding to about us body text */
+	.aboutush {
+		padding-top: 5%;
+		padding-left: 20%;
+		padding-right: 1%;
+		padding-bottom: 5%;
+	}
+
+	/* Styles and positions chocolate cake image at bottom of "about us" page */
+	.chocolatecake {
+		width: 50%;
+		display: flex;
+		justify-content: center;
+		margin: 30px auto;
+		border: solid rgba(102,52,151,255) 10px;
+	}
+
+	/* Centers the form on the page */
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		padding-bottom: 20px;
+	}
+	
+	/* styles the form */
+	label {
+		display: block;
+		font-family: 'Tilt Warp', cursive;
+		margin-bottom: 1rem;
+		color: black;
+		font-size: 1.25rem;
+	}
+	
+	/* styles input sections */
+	input[type="text"], input[type="email"], textarea {
+		padding: 0.5rem;
+		border-radius: 0.25rem;
+		border: 1px solid #ccc;
+		margin-bottom: 1rem;
+		width: 100%;
+		max-width: 400px;
+	}
+
+	/* Positions textarea */
+	textarea {
+		height: 150px;
+	}
+	
+	/* Styles the submit button */
+	button[type="submit"] {
+		background-color: rgba(102,52,151,255);
+		color: rgba(147,199,116,255);
+		padding: 0.5rem 1rem;
+		border: none;
+		border-radius: 0.25rem;
+		cursor: pointer;
+		transition: background-color 0.3s ease-in-out;
+	}
+	
+	/* Animates hovering over the submit button by changing stylization when hovering */
+	button[type="submit"]:hover {
+		background-color: rgba(80,52,151,255);
+	}
+	}
+
+	
