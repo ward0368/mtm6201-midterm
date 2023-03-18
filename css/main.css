@@ -102,7 +102,7 @@ a:hover, a:active {
 
 /* animates/resizes site logo */
 .sitelogo {
-    width: 5%;
+    width: 100px;
 	display: flex;
 	float: left;
 }
@@ -129,6 +129,7 @@ a:hover, a:active {
     align-items: center;
 	color: rgba(102,52,151,255);
 	padding: 10px;
+	padding-left: 100px;
   }
 
 /* Styles and sizes image, as well as positions */
@@ -303,37 +304,20 @@ form {
 	/* Positions main navigation links (mobile) */
 	.hac {
 		text-align: center;
-		padding-bottom: 30px;
+		padding-bottom: 60px;
 		padding-top: 30px;
 		justify-content: center;
 		display: flex;
-		border: solid 10px black;
 	}
-	
-
-	/* Adds padding to right side of navigation */
-	.contact {
-		padding-right: 5%;
-	}
-
+	 
 	/* animates/resizes site logo */
 	.sitelogo {
-		width: 5%;
+		width: 50%;
+		margin: 0 auto;
 		display: flex;
-		float: left;
+		padding: 20px;
 	}
 
-	/* Animates site logo when hovering (for fun) */
-	.sitelogo:hover {
-		transform:rotateY(2turn);
-		transition:transform 4s;
-	}
-
-	/* Animates site logo when active (for fun) */
-	.sitelogo:active {
-		transform: rotateX(4turn) scale(0.2);
-		transition: transform 4s;
-	}
 
 	/* Styles and positions "skip to main content" skip link */
 	.skip {
@@ -367,14 +351,11 @@ form {
 		font-size: larger;
 		padding: 20px;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: center;
 		font-family: 'Tilt Warp', cursive;
 	} 
 
-	/* Adds padding to unsplash link */
-	.unsplash {
-		padding-right: 1%;
-	}
 
 	/* Styles and positions h3's */
 	h3 {
