@@ -156,9 +156,16 @@ footer {
 	font-family: 'Tilt Warp', cursive;
 } 
 
-/* Adds padding to unsplash link */
+/* Adds padding to unsplash link, adds "float" animation to unsplash link*/
 .unsplash {
 	padding-right: 1%;
+	animation-name: float;
+	animation-duration: 4s;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
 }
 
 /* Styles and positions h3's */
@@ -171,6 +178,22 @@ h3 {
 	padding-bottom: 2%;
 	color: rgba(102,52,151,255);
 }
+
+@keyframes float {
+	0%,
+	100% {
+	  border-radius: 30%;
+	  transform-origin: 50px 70px;
+	}
+  
+	0% {
+	  transform: rotate(0deg);
+	}
+  
+	100% {
+	  transform: rotate(-20deg);
+	}
+  }
 
 /* Styles and positions h4's */
 h4 {
@@ -310,7 +333,7 @@ form {
 		display: flex;
 	}
 	 
-	/* animates/resizes site logo */
+	/* animates/resizes site logo (mobile)*/
 	.sitelogo {
 		width: 50%;
 		margin: 0 auto;
@@ -318,8 +341,19 @@ form {
 		padding: 20px;
 	}
 
+	/* Adds padding to unsplash link, adds "float" animation to unsplash link (mobile)*/
+	.unsplash {
+	padding-right: 1%;
+	animation-name: float;
+	animation-duration: 4s;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+	animation-timing-function: ease-in-out;
+}
 
-	/* Styles and positions "skip to main content" skip link */
+	/* Styles and positions "skip to main content" skip link (mobile) */
 	.skip {
 		display: flex;
 		position: absolute;
@@ -331,156 +365,31 @@ form {
 		padding: 10px;
 	}
 
-	/* Styles and sizes image, as well as positions */
+	/* Styles and sizes image, as well as positions (mobile)*/
 	.cakepop {
 		display: flex;
 		margin: 10px auto;
-		width: 80%;
+		width: 85%;
 		border: solid rgba(102,52,151,255) 10px;
 	}
 
-	/* styles background color of site to match wireframe */
-	html {
-		background-color: rgba(147,199,116,255);
-		min-height: 100%;
-	}
 
-	/* styles the footer to match wireframe */
-	footer {
-		background-color: rgba(102,52,151,255);
-		font-size: larger;
-		padding: 20px;
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		font-family: 'Tilt Warp', cursive;
-	} 
-
-
-	/* Styles and positions h3's */
-	h3 {
-		font-size: 40px;
-		font-family: 'Tilt Warp', cursive;
-		padding-bottom: 1.5%;
-		display: grid;
-		justify-content: left;
-		padding-bottom: 2%;
-		color: rgba(102,52,151,255);
-	}
-
-	/* Styles and positions h4's */
-	h4 {
-		display: flex;
-		justify-content: center;
-		font-size: 40px;
-		font-family: 'Tilt Warp', cursive;
-		padding: 3%;
-		color: rgba(102,52,151,255);
-	}
-
-	/* adds padding to all paragraphs within an article */
-	article p {
-		padding: 1%;
-	}
-
-	/* Styles all paragraph text */
-	p {
-		font-family: 'Lato', sans-serif;
-		font-size: 25px;
-		color: rgba(102,52,151,255);
-	}
-
-	h1 {
-		display: flex;
-		justify-content: center;
-		font-family: 'Tilt Warp', cursive;
-		padding-bottom: 20px;
-		padding-top: 10px;
-		font-size: 40px;
-		color: rgba(102,52,151,255);
-	}
-
-	/* Positions home <main> content using grid */
+	/* Positions home <main> content using grid (mobile)*/
 	.home1 {
 		display: grid;
-		grid-auto-flow: column;
 		margin: 0 auto;
+		grid-auto-flow: row;
+		justify-content: center;
 	}
 
-	/* Adds padding to our products body text */
-	.ourproductsh {
-		padding-right: 20%;
-		padding-top: 5%;
-		padding-left: 1%;
-		padding-bottom: 5%;
-	}
 
-	/* Adds padding to about us body text */
-	.aboutush {
-		padding-top: 5%;
-		padding-left: 20%;
-		padding-right: 1%;
-		padding-bottom: 5%;
-	}
-
-	/* Styles and positions chocolate cake image at bottom of "about us" page */
+	/* Styles and positions chocolate cake image at bottom of "about us" page (mobile)*/
 	.chocolatecake {
-		width: 50%;
+		width: 80%;
 		display: flex;
 		justify-content: center;
 		margin: 30px auto;
 		border: solid rgba(102,52,151,255) 10px;
 	}
 
-	/* Centers the form on the page */
-	form {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		margin: 0 auto;
-		padding-bottom: 20px;
-	}
-	
-	/* styles the form */
-	label {
-		display: block;
-		font-family: 'Tilt Warp', cursive;
-		margin-bottom: 1rem;
-		color: black;
-		font-size: 1.25rem;
-	}
-	
-	/* styles input sections */
-	input[type="text"], input[type="email"], textarea {
-		padding: 0.5rem;
-		border-radius: 0.25rem;
-		border: 1px solid #ccc;
-		margin-bottom: 1rem;
-		width: 100%;
-		max-width: 400px;
-	}
-
-	/* Positions textarea */
-	textarea {
-		height: 150px;
-	}
-	
-	/* Styles the submit button */
-	button[type="submit"] {
-		background-color: rgba(102,52,151,255);
-		color: rgba(147,199,116,255);
-		padding: 0.5rem 1rem;
-		border: none;
-		border-radius: 0.25rem;
-		cursor: pointer;
-		transition: background-color 0.3s ease-in-out;
-	}
-	
-	/* Animates hovering over the submit button by changing stylization when hovering */
-	button[type="submit"]:hover {
-		background-color: rgba(80,52,151,255);
-	}
-	}
-
-	
+}
